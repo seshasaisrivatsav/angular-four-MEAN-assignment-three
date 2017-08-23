@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WebsiteEditComponent } from './website-edit.component';
+import { WidgetNewComponent } from './widget-new.component';
 
-describe('WebsiteEditComponent', () => {
-  let component: WebsiteEditComponent;
-  let fixture: ComponentFixture<WebsiteEditComponent>;
+describe('WidgetNewComponent', () => {
+  let component: WidgetNewComponent;
+  let fixture: ComponentFixture<WidgetNewComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ WebsiteEditComponent ]
+      declarations: [ WidgetNewComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WebsiteEditComponent);
+    fixture = TestBed.createComponent(WidgetNewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

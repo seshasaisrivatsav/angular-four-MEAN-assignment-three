@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WebsiteMewComponent } from './website-mew.component';
+import { WidgetListComponent } from './widget-list.component';
 
-describe('WebsiteMewComponent', () => {
-  let component: WebsiteMewComponent;
-  let fixture: ComponentFixture<WebsiteMewComponent>;
+describe('WidgetListComponent', () => {
+  let component: WidgetListComponent;
+  let fixture: ComponentFixture<WidgetListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ WebsiteMewComponent ]
+      declarations: [ WidgetListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WebsiteMewComponent);
+    fixture = TestBed.createComponent(WidgetListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

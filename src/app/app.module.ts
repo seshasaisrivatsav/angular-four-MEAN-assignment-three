@@ -6,7 +6,8 @@ import {FormsModule} from '@angular/forms';
 
 /* Client Services Here */
 import {TestService} from './services/test.service.client';
-
+import {WebsiteService} from "./services/website.service.client";
+import {UserService} from './services/user.service.client';
 
 /*  IMPORT COMPONENTS HERE  */
 import { AppComponent } from './app.component';
@@ -21,7 +22,9 @@ import { PageNewComponent } from './components/page/page-new/page-new.component'
 import { WebsiteEditComponent } from './components/website/website-edit/website-edit.component';
 import { WebsiteListComponent } from './components/website/website-list/website-list.component';
 import { WebsiteNewComponent } from './components/website/website-new/website-new.component';
-import { WebsiteMewComponent } from './components/widget/website-mew/website-mew.component';
+import { WidgetEditComponent } from './components/widget/widget-edit/widget-edit.component';
+import { WidgetListComponent } from './components/widget/widget-list/widget-list.component';
+import { WidgetNewComponent } from './components/widget/widget-new/widget-new.component';
 
 /* THIS IS SUPPOSED TO IMPORT THE COMPONENTS TO APP MODULE FILE
  BUT CURRENT VERSION OF ANGULAR CLI HAS A BUG
@@ -45,7 +48,9 @@ MAKE SURE THE COMPONENTS ARE MENTIONED IN THE DECLARATIONS */
     WebsiteEditComponent,
     WebsiteListComponent,
     WebsiteNewComponent,
-    WebsiteMewComponent
+    WidgetEditComponent,
+    WidgetListComponent,
+    WidgetNewComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +59,7 @@ MAKE SURE THE COMPONENTS ARE MENTIONED IN THE DECLARATIONS */
     Routing
   ],
   // Client Side services here
-  providers: [ TestService],
+  providers: [ TestService, UserService, WebsiteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
