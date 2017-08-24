@@ -11,7 +11,7 @@ export class WebsiteNewComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,  private router: Router, private _websiteService : WebsiteService) { }
 
-  website : any;
+  website : any = { name : "", description : ""};
   userId : String;
 
   ngOnInit() {
@@ -23,7 +23,7 @@ export class WebsiteNewComponent implements OnInit {
   }
 
   createWebsite(){
-    this._websiteService.createWebsite(this.website);
+    this._websiteService.createWebsite(this.website, this.userId);
     this.router.navigate(['/user', this.userId, 'website']);
   }
 

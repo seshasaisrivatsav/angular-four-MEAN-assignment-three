@@ -25,7 +25,6 @@ export class WebsiteService {
   ];
 
   findWebsitesByUser(userId){
-    console.log(userId, "in client");
     /*retrieves the websites in local websites array whose developerId matches the parameter userId */
     let resultSet = [];
     for (let i in this.websites){
@@ -36,6 +35,51 @@ export class WebsiteService {
     return resultSet;
   }
 
+  createWebsite(website, userId){
+
+    let newWebsite = {
+      _id: (new Date()).getTime()+"",
+      name: website.name,
+      description: website.description,
+      developerId: userId
+    };
+    this.websites.push(newWebsite);
+
+  }
+
+  findWebsiteById(websiteId){
+    for (let i in this.websites){
+      if(this.websites[i]._id === websiteId){
+        return this.websites[i];
+
+      }
+    } return null;
+  }
+
+  updateWebsite(websiteId, website){
+    for (let i in this.websites){
+      if(this.websites[i]._id === websiteId){
+        this.websites[i].name = website.name;
+        this.websites[i].description = website.description;
+        return true;
+      }
+    }
+    return false;
+  }
+
+  deleteWebsite(websiteId){
+    for (let i in this.websites){
+      if (this.websites[i]._id === websiteId){
+        // To typecast the loop variable as an integer for the splice
+        // function to work
+        let j = +i;
+        this.websites.splice(j, 1);
+        return true;
+      }
+    }
+    return false;
+
+  }
 
 
 
