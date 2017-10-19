@@ -1,19 +1,36 @@
-# AngularFourMEANSeed
-
-After you clone this repository and run "npm install"
-To start the project
-Open two terminals, One to start the front end, One to start the backend
-
-~ npm start
+<h1>WebAppMaker</h1>
 
 
-~ nodemon server.js
-
-Front end will run on `http://localhost:4200/`
-Server will run on port 3100. Specified in server.js and in environment.ts files
+<p>This is an Angular 4 app designed for student reference when I was working as a Web Development Teaching Assistant at Northeastern University. This is the third assignment designed for the students</p>
+<p>https://sesha-sai-srivatsav.herokuapp.com/webdev</p>
 
 
+<h2>Live instance of the project
+</h2>
+<p>https://web-app-maker-angular-4.herokuapp.com/</p>
 
+ 
+<h1>Required Installations on local machine</h1>
+
+<img src="https://excellentwebworld.com/wp-content/uploads/2017/09/images-2.jpg" height=190px>
+<ol>
+  <li>MongoDB</li>
+  <li>ExpressJS</li>
+    <li>Angular CLI</li>
+  <li>nodeJS</li>
+</ol>  
+
+
+
+
+<h1>Running the project </h1>
+<ol>
+<li>git clone https://github.com/seshasaisrivatsav/web-app-maker-angular-four</li>
+<li>npm install</li>
+<li>Run the server: "nodemon server.js". This watcher constantly looks for server changes</li>
+<li>Run the frontend: "npm start" </li>
+<li>Portal will be live on "http://localhost:4200/". API lives on port 9000</li>
+</ol>
 
 
 
@@ -42,3 +59,18 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+
+<h1>Author</h1>
+<p>Sesha Sai Srivatsav Kuchibhotla</p>
+<ul>
+  <li>https://github.com/seshasaisrivatsav/</li>
+  <li>http://www.seshasaisrivatsav.com/</li>
+  <li>https://www.linkedin.com/in/seshasaisrivatsav</li>
+</ul>
+
+
+<h1>License</h1>
+<p><a href="https://github.com/seshasaisrivatsav/srivatsav-resume/blob/master/LICENSE">MIT</a></p>
